@@ -1,0 +1,125 @@
+
+:root {
+
+    --primary-color: #ffffff;
+    --secondary-color: #1cafe9;
+    --background-color: #ca00a9;
+    --container-color: #ffffff;
+    --container-2-color: #ec8484;
+    --text-color: #000000;
+    --link-color: #33aada;
+    --link-hover-color: #ffffff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+html {
+    background-color: var(--background-color);
+}
+body {
+    padding: 20px;
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.wishing {
+    color: var(--text-color);
+    background-color: var(--container-color);
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+h3 {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.gift {
+    background-color: var(--container-2-color);
+    color: #270041;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.gift img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.clublist {
+
+}
+
+.club {
+    background-color: var(--container-color);
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.club p {
+    width: 100%;
+}
+
+.club img {
+    min-width: 120px;
+    width: 9vw;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.clubinfo {
+    width: 200px;
+}
+
